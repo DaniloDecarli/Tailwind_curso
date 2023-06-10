@@ -1,0 +1,442 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="font-sans antialiased" style="margin-bottom: 32px;">
+    <div id="app"
+        data-page="{&quot;component&quot;:&quot;Auth\/Login&quot;,&quot;props&quot;:{&quot;jetstream&quot;:{&quot;canCreateTeams&quot;:false,&quot;canManageTwoFactorAuthentication&quot;:true,&quot;canUpdatePassword&quot;:true,&quot;canUpdateProfileInformation&quot;:true,&quot;hasEmailVerification&quot;:false,&quot;flash&quot;:[],&quot;hasAccountDeletionFeatures&quot;:false,&quot;hasApiFeatures&quot;:false,&quot;hasTeamFeatures&quot;:false,&quot;hasTermsAndPrivacyPolicyFeature&quot;:false,&quot;managesProfilePhotos&quot;:false},&quot;user&quot;:null,&quot;errorBags&quot;:[],&quot;errors&quot;:{},&quot;appLinkDestroy&quot;:true,&quot;appOneSideMenu&quot;:[],&quot;appCurrentRoute&quot;:&quot;http:\/\/10.115.136.215\/login&quot;,&quot;appone&quot;:&quot;Andromeda&quot;,&quot;apponeTrue&quot;:false,&quot;apptwo&quot;:&quot;Sidac&quot;,&quot;apptwoTrue&quot;:false,&quot;appName&quot;:&quot;Sistema Integrado de Intelig\u00eancia&quot;,&quot;appUrl&quot;:&quot;http:\/\/10.115.136.215&quot;,&quot;flash&quot;:{&quot;message&quot;:null},&quot;userInfo&quot;:{&quot;data&quot;:&quot;22\/05\/2023 10:56&quot;,&quot;version&quot;:&quot;230522.1356&quot;,&quot;ip&quot;:&quot;10.115.136.227&quot;,&quot;hostname&quot;:&quot;fc3e3646cacd&quot;},&quot;userData&quot;:{&quot;userName&quot;:&quot;&quot;,&quot;userEmail&quot;:&quot;&quot;,&quot;0&quot;:{&quot;name&quot;:&quot;Meus Dados&quot;,&quot;href&quot;:&quot;http:\/\/10.115.136.215\/user\/profile&quot;,&quot;method&quot;:&quot;get&quot;},&quot;1&quot;:{&quot;name&quot;:&quot;Logout&quot;,&quot;href&quot;:&quot;http:\/\/10.115.136.215\/logout&quot;,&quot;method&quot;:&quot;post&quot;}},&quot;userAdmin&quot;:false,&quot;userNavigation&quot;:[{&quot;name&quot;:&quot;Meus Dados&quot;,&quot;href&quot;:&quot;http:\/\/10.115.136.215\/user\/profile&quot;,&quot;method&quot;:&quot;get&quot;},{&quot;name&quot;:&quot;Logout&quot;,&quot;href&quot;:&quot;http:\/\/10.115.136.215\/logout&quot;,&quot;method&quot;:&quot;post&quot;}],&quot;canResetPassword&quot;:true,&quot;status&quot;:null},&quot;url&quot;:&quot;\/login&quot;,&quot;version&quot;:&quot;b6b31c2e632a711ff39485a7c2228dbc&quot;}"
+        data-v-app="">
+        <div>
+            <!---->
+            <!---->
+            <!-- Static sidebar for desktop -->
+            <div class="hidden md:fixed md:inset-y-0 md:flex md:w-64 md:flex-col">
+                <!-- Sidebar component, swap this element with another sidebar if you like -->
+                <div class="flex min-h-0 flex-1 flex-col bg-gray-800">
+                    <div class="flex h-16 flex-shrink-0 items-center bg-gray-900 px-4"><img
+                            class="mr-3 h-8 w-auto hover:-translate-y-1 hover:scale-110 duration-300 focus:outline-none"
+                            src="http://10.115.136.215/images/coruja.png" alt="Andromeda" title="http://10.115.136.215/appone/operations">
+                        <p
+                            class="rounded-md mt-2 text-2xl text-justify font-extrabold text-gray-400 hover:-translate-y-1 hover:scale-110 hover:text-gray-300 duration-300 focus:outline-none">
+                            Andromeda</p>
+                    </div>
+                    <div class="mt-5 flex flex-grow flex-col">
+                        <nav class="flex-1 space-y-1 px-2" aria-label="Sidebar"><a
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                                href="http://10.115.136.215/appone"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                                    class="mr-3 flex-shrink-0 h-4 w-4 text-gray-300 mr-3 flex-shrink-0 h-4 w-4">
+                                    <path
+                                        d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z">
+                                    </path>
+                                    <path
+                                        d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z">
+                                    </path>
+                                </svg> Principal</a>
+                            <div data-headlessui-state="" class="space-y-1"><button
+                                    id="headlessui-disclosure-button-105" type="button" aria-expanded="false"
+                                    data-headlessui-state=""
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        aria-hidden="true"
+                                        class="mr-3 flex-shrink-0 h-4 w-4 mr-3 h-4 w-4 flex-shrink-0 text-gray-400 group-hover:text-gray-500">
+                                        <path fill-rule="evenodd"
+                                            d="M2.25 5.25a3 3 0 013-3h13.5a3 3 0 013 3V15a3 3 0 01-3 3h-3v.257c0 .597.237 1.17.659 1.591l.621.622a.75.75 0 01-.53 1.28h-9a.75.75 0 01-.53-1.28l.621-.622a2.25 2.25 0 00.659-1.59V18h-3a3 3 0 01-3-3V5.25zm1.5 0v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5z"
+                                            clip-rule="evenodd"></path>
+                                    </svg><span class="flex-1">Painel de Controle</span><svg
+                                        class="text-gray-300 ml-3 h-5 w-5 flex-shrink-0 transform transition-colors duration-150 ease-in-out group-hover:text-gray-400"
+                                        viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M6 6L14 10L6 14V6Z" fill="currentColor"></path>
+                                    </svg></button>
+                                <!---->
+                            </div>
+                            <div data-headlessui-state="" class="space-y-1"><button
+                                    id="headlessui-disclosure-button-107" type="button" aria-expanded="false"
+                                    data-headlessui-state=""
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        aria-hidden="true"
+                                        class="mr-3 flex-shrink-0 h-4 w-4 mr-3 h-4 w-4 flex-shrink-0 text-gray-400 group-hover:text-gray-500">
+                                        <path fill-rule="evenodd"
+                                            d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                            clip-rule="evenodd"></path>
+                                    </svg><span class="flex-1">Pesquisas</span><svg
+                                        class="text-gray-300 ml-3 h-5 w-5 flex-shrink-0 transform transition-colors duration-150 ease-in-out group-hover:text-gray-400"
+                                        viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M6 6L14 10L6 14V6Z" fill="currentColor"></path>
+                                    </svg></button>
+                                <!---->
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="flex flex-shrink-0 bg-gray-700 p-2">
+                        <div class="flex items-center ml-2">
+                            <div>
+                                <p class="text-sm font-medium text-gray-500">Version: 230522.1411</p>
+                                <p class="text-sm font-medium text-gray-500">Hostname: fc3e3646cacd</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:pl-64">
+                <div class="sticky top-0 z-10 flex h-16 flex-shrink-0 bg-white shadow"><button type="button"
+                        class="border-r border-gray-200 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"><span
+                            class="sr-only">Abrir Menu</span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                            class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"></path>
+                        </svg></button>
+                    <div class="flex flex-1 justify-between px-4">
+                        <div class="flex flex-1"></div>
+                        <div class="ml-4 flex items-center md:ml-6">
+                            <!--v-if-->
+                            <!-- Configuration Menu -->
+                            <div data-headlessui-state="" class="relative ml-3">
+                                <div><button id="headlessui-menu-button-109" type="button" aria-haspopup="menu"
+                                        aria-expanded="false" data-headlessui-state=""
+                                        class="rounded-full bg-white p-1 text-gray-400 hover:-translate-y-1 hover:scale-110 hover:text-gray-500 duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                        title="Configurações Administrativas"><span class="sr-only">Configurações
+                                            Administrativas</span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            aria-hidden="true" class="h-8 w-8">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z">
+                                            </path>
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        </svg></button></div>
+                                <!---->
+                            </div><!-- Aplications Menu -->
+                            <div data-headlessui-state="" class="relative ml-3">
+                                <div><button id="headlessui-menu-button-111" type="button" aria-haspopup="menu"
+                                        aria-expanded="false" data-headlessui-state=""
+                                        class="rounded-full bg-white p-1 text-gray-400 hover:-translate-y-1 hover:scale-110 hover:text-gray-500 duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                        title="Aplicações"><span class="sr-only">Aplicações</span><svg
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-8 w-8">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25">
+                                            </path>
+                                        </svg></button></div>
+                                <!---->
+                            </div><!-- Profile dropdown -->
+                            <div data-headlessui-state="" class="relative ml-3">
+                                <div><button id="headlessui-menu-button-113" type="button" aria-haspopup="menu"
+                                        aria-expanded="false" data-headlessui-state=""
+                                        class="flex max-w-xs items-center rounded-full bg-white p-1 text-gray-400 hover:-translate-y-1 hover:scale-110 hover:text-gray-500 duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"><span
+                                            class="sr-only">Abrir Menu do Usuário</span><img
+                                            class="h-8 w-8 rounded-full" src="http://10.115.136.215/images/coruja.png"
+                                            alt="Meus Dados"></button></div>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <main class="flex-1">
+                    <div class="p-6">
+                        <div class="ml-8 mb-4 mx-auto max-w-full px-4 sm:px-6 md:px-8">
+                            <h1 class="text-2xl font-semibold text-gray-900"> Operações </h1>
+                        </div>
+                        <!--v-if-->
+                        <div
+                            class="mx-auto max-w-full mx-4 px-4 sm:px-6 md:px-8 bg-gray-100 rounded-lg shadow overflow-hidden">
+                            <div class="bg-white m-4 rounded-lg">
+                                <div class="mt-6">
+                                    <div class="px-4 sm:px-6 lg:px-8">
+                                        <div class="sm:flex sm:items-center">
+                                            <!-- <div class="sm:flex-auto">
+            <h1 class="text-xl font-semibold text-gray-900">Users</h1>
+            <p class="mt-2 text-sm text-gray-700">A list of all the users in your account including their name, title, email and role.</p>
+        </div>
+        <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+            <button type="button" class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto">Add user</button>
+        </div> -->
+                                            <div class="flex-1 mt-3 px-2 flex justify-center lg:ml-6 lg:justify-end">
+                                                <div class="max-w-lg w-full lg:max-w-xs"><label
+                                                        class="relative block"><span class="sr-only">Search</span><span
+                                                            class="absolute inset-y-0 left-0 flex items-center pl-2"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                                fill="currentColor" aria-hidden="true"
+                                                                class="h-5 w-5 fill-slate-300">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                                                    clip-rule="evenodd"></path>
+                                                            </svg></span><input
+                                                            class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm hover:border-sky-500 hover:ring-sky-500 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                                                            placeholder="Pesquisar..." type="text" id="Search"></label>
+                                                </div>
+                                                <div class="ml-6 max-w-lg lg:max-w-xs"><button
+                                                        class="inline-flex items-center justify-center rounded-md border border-transparent bg-green-700 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-800 focus:ring-offset-2 sm:w-auto hover:-translate-y-1 hover:scale-110 duration-300">Novo</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="-mx-4 mt-10 ring-1 ring-gray-300 sm:-mx-6 md:mx-0 md:rounded-lg">
+                                            <div class="mt-8 flow-root">
+                                                <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                                                    <div
+                                                        class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+                                                        <div
+                                                            class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:rounded-lg">
+                                                            <!-- BEGIN: Table -->
+                                                            <table class="min-w-full divide-y divide-gray-300">
+                                                                <thead class="bg-gray-50">
+                                                                    <tr class="divide-x divide-gray-300">
+                                                                        <th scope="col"
+                                                                            class="px-4 py-3.5 text-center text-sm font-semibold text-gray-900">
+                                                                            Name</th>
+                                                                        <th scope="col"
+                                                                            class="px-4 py-3.5 text-center text-sm font-semibold text-gray-900">
+                                                                            Sigla</th>
+                                                                        <th scope="col"
+                                                                            class="px-4 py-3.5 text-center text-sm font-semibold text-gray-900">
+                                                                            Processo</th>
+                                                                        <th scope="col"
+                                                                            class="px-4 py-3.5 text-center text-sm font-semibold text-gray-900">
+                                                                            Data Início</th>
+                                                                        <th scope="col"
+                                                                            class="px-4 py-3.5 text-center text-sm font-semibold text-gray-900">
+                                                                            Data Término</th>
+                                                                        <th scope="col"
+                                                                            class="px-4 py-3.5 text-center text-sm font-semibold text-gray-900">
+                                                                            Status</th>
+                                                                        <th scope="col"
+                                                                            class="py-3.5 pl-4 pr-4 text-center text-sm font-semibold text-gray-900 sm:pr-6">
+                                                                            Ações</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="divide-y divide-gray-200 bg-white">
+                                                                    <tr
+                                                                        class="divide-x divide-gray-300 bg-white hover:bg-gray-200">
+                                                                        <td class="whitespace-nowrap text-center p-4 text-sm"
+                                                                            title="ID: 7e48318c-fd15-48aa-9668-60d935d41191">
+                                                                            Desenvolvimento</td>
+                                                                        <td
+                                                                            class="whitespace-nowrap text-center p-4 text-sm">
+                                                                            DEV</td>
+                                                                        <td
+                                                                            class="whitespace-nowrap text-center p-4 text-sm">
+                                                                        </td>
+                                                                        <td
+                                                                            class="whitespace-nowrap text-center p-4 text-sm">
+                                                                            22/05/2023</td>
+                                                                        <td
+                                                                            class="whitespace-nowrap text-center p-4 text-sm">
+                                                                            -</td>
+                                                                        <td
+                                                                            class="whitespace-nowrap text-center p-4 text-sm">
+                                                                            <span
+                                                                                class="inline-flex rounded-full bg-green-700 px-2 text-white text-xs font-bold leading-5">Ativo</span>
+                                                                        </td>
+                                                                        <td
+                                                                            class="whitespace-nowrap text-center py-4 pl-4 pr-4 text-sm sm:pr-6">
+                                                                            <div
+                                                                                class="flex justify-center items-center space-x-2">
+                                                                                <div><a title="Ver"
+                                                                                        class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                                                                                        href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191"><svg
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            fill="currentColor"
+                                                                                            aria-hidden="true"
+                                                                                            class="h-5 w-5">
+                                                                                            <path fill-rule="evenodd"
+                                                                                                d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                                                                                clip-rule="evenodd">
+                                                                                            </path>
+                                                                                        </svg></a>
+                                                                                    <!--v-if-->
+                                                                                    <!--v-if-->
+                                                                                    <!--v-if-->
+                                                                                    <!--v-if-->
+                                                                                </div>
+                                                                                <div>
+                                                                                    <!--v-if--><a title="Editar"
+                                                                                        class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-yellow-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                                                                                        href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191/edit"><svg
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            fill="currentColor"
+                                                                                            aria-hidden="true"
+                                                                                            class="h-5 w-5">
+                                                                                            <path
+                                                                                                d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z">
+                                                                                            </path>
+                                                                                            <path
+                                                                                                d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z">
+                                                                                            </path>
+                                                                                        </svg></a>
+                                                                                    <!--v-if-->
+                                                                                    <!--v-if-->
+                                                                                    <!--v-if-->
+                                                                                </div>
+                                                                                <div>
+                                                                                    <!--v-if-->
+                                                                                    <!--v-if--><button title="Excluir"
+                                                                                        class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-red-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"><svg
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            fill="currentColor"
+                                                                                            aria-hidden="true"
+                                                                                            class="h-5 w-5">
+                                                                                            <path fill-rule="evenodd"
+                                                                                                d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
+                                                                                                clip-rule="evenodd">
+                                                                                            </path>
+                                                                                        </svg></button>
+                                                                                    <!--v-if-->
+                                                                                    <!--v-if-->
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr
+                                                                        class="divide-x divide-gray-300 bg-gray-50 hover:bg-gray-200">
+                                                                        <td class="whitespace-nowrap text-center p-4 text-sm"
+                                                                            title="ID: a05e50de-ee8d-464d-8322-938d2402a243">
+                                                                            Teste</td>
+                                                                        <td
+                                                                            class="whitespace-nowrap text-center p-4 text-sm">
+                                                                            TS</td>
+                                                                        <td
+                                                                            class="whitespace-nowrap text-center p-4 text-sm">
+                                                                        </td>
+                                                                        <td
+                                                                            class="whitespace-nowrap text-center p-4 text-sm">
+                                                                            22/05/2023</td>
+                                                                        <td
+                                                                            class="whitespace-nowrap text-center p-4 text-sm">
+                                                                            -</td>
+                                                                        <td
+                                                                            class="whitespace-nowrap text-center p-4 text-sm">
+                                                                            <span
+                                                                                class="inline-flex rounded-full bg-green-700 px-2 text-white text-xs font-bold leading-5">Ativo</span>
+                                                                        </td>
+                                                                        <td
+                                                                            class="whitespace-nowrap text-center py-4 pl-4 pr-4 text-sm sm:pr-6">
+                                                                            <div
+                                                                                class="flex justify-center items-center space-x-2">
+                                                                                <div><a title="Ver"
+                                                                                        class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                                                                                        href="http://10.115.136.215/appone/operations/a05e50de-ee8d-464d-8322-938d2402a243"><svg
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            fill="currentColor"
+                                                                                            aria-hidden="true"
+                                                                                            class="h-5 w-5">
+                                                                                            <path fill-rule="evenodd"
+                                                                                                d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                                                                                clip-rule="evenodd">
+                                                                                            </path>
+                                                                                        </svg></a>
+                                                                                    <!--v-if-->
+                                                                                    <!--v-if-->
+                                                                                    <!--v-if-->
+                                                                                    <!--v-if-->
+                                                                                </div>
+                                                                                <div>
+                                                                                    <!--v-if--><a title="Editar"
+                                                                                        class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-yellow-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                                                                                        href="http://10.115.136.215/appone/operations/a05e50de-ee8d-464d-8322-938d2402a243/edit"><svg
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            fill="currentColor"
+                                                                                            aria-hidden="true"
+                                                                                            class="h-5 w-5">
+                                                                                            <path
+                                                                                                d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z">
+                                                                                            </path>
+                                                                                            <path
+                                                                                                d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z">
+                                                                                            </path>
+                                                                                        </svg></a>
+                                                                                    <!--v-if-->
+                                                                                    <!--v-if-->
+                                                                                    <!--v-if-->
+                                                                                </div>
+                                                                                <div>
+                                                                                    <!--v-if-->
+                                                                                    <!--v-if--><button title="Excluir"
+                                                                                        class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-red-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"><svg
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            fill="currentColor"
+                                                                                            aria-hidden="true"
+                                                                                            class="h-5 w-5">
+                                                                                            <path fill-rule="evenodd"
+                                                                                                d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
+                                                                                                clip-rule="evenodd">
+                                                                                            </path>
+                                                                                        </svg></button>
+                                                                                    <!--v-if-->
+                                                                                    <!--v-if-->
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
+                                            <div class="flex-1 flex justify-between sm:hidden"><a aria-disabled="true"
+                                                    class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-gray-100"
+                                                    disabled="" href=""> Anterior </a><a aria-disabled="true"
+                                                    class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-gray-100"
+                                                    disabled="" href=""> Próximo </a></div>
+                                            <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+                                                <div>
+                                                    <p class="text-sm text-gray-700"> Exibindo <span
+                                                            class="font-medium">1</span> à <span
+                                                            class="font-medium">2</span> de <span
+                                                            class="font-medium">2</span> <span>Registros</span></p>
+                                                </div>
+                                                <div>
+                                                    <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px"
+                                                        aria-label="Pagination"><a
+                                                            class="disabled pointer-events-none relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-gray-200 text-sm font-medium text-gray-500 hover:bg-gray-50"
+                                                            disabled="" href=""><span
+                                                                class="sr-only">Anterior</span><svg
+                                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                                fill="currentColor" aria-hidden="true" class="h-5 w-5">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z"
+                                                                    clip-rule="evenodd"></path>
+                                                            </svg></a><a aria-disabled="true"
+                                                            class="disabled pointer-events-none relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-gray-200 text-sm font-medium text-gray-500 hover:bg-gray-50"
+                                                            title="Próximo" disabled="" href=""><span
+                                                                class="sr-only">Próximo</span><svg
+                                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                                fill="currentColor" aria-hidden="true" class="h-5 w-5">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                                                                    clip-rule="evenodd"></path>
+                                                            </svg></a></nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

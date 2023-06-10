@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Construção de Layout</title>
+</head>
+<body>
+  <div class="container bg-red-300 mx-auto p-4 my-4 text-red-900 border-red-600 border-2">
+    <p>O texto do container</p>
+  </div> 
+  <!--Exercício 1-->
+  <div class="container bg-green-300 md:bg-blue-300 text-green-900 md:text-blue-900 border-green-600 md:border-blue-600 border-2">
+    <p>Exercício 1</p>
+  </div>
+  <div class="container bg-purple-700 border-2 border-purple-800 m-4 box-border p-10"><!--Soma padding e borders-->
+    <p>Border box</p>
+  </div>
+  <div class="container bg-teal-700 border-2 border-teal-800 m-4 box-content p-10"><!--Respeita a medida com padding e border passando a largura determinada-->
+    <p>Border content</p>
+  </div>
+  <!--Display-->
+  <div class="container">
+    <span class=" bg-red-300">Não são elementos de blocos</span><!--estão em line-->
+    <span class=" bg-red-300">Não são elementos de blocos</span><!--estão em line-->
+    <span class="block bg-red-300">Não são elementos de blocos</span><!--estão em blocos-->
+    <span class="block bg-red-300">Não são elementos de blocos</span><!--estão em blocos-->
+    <div class="bg-blue-500">Block</div><!--estão em blocos-->
+    <div class="bg-blue-500 blo">Block</div><!--estão em blocos-->
+    <div class="bg-blue-500 inline-block">Line</div><!--estão em line-->
+    <div class="bg-blue-500 inline-block">Line</div><!--estão em line-->
+    <div class="bg-green-300 hidden">Estou aparecendo</div><!--não apresenta a linha/bloco-->
+    <div class="bg-green-300">Estou aparecendo</div>
+  </div>
+  <!--Exxerício 2-->
+  <div class="container bg-yellow-400 m-6 p-6">
+    <div class="bg-red-400 inline-block">Exercício 2</div>
+    <div class="bg-gray-500 inline-block">Exercício 2</div>
+    <div class="bg-green-300 inline-block">Exercício 2</div>
+  </div>
+
+ 
+  <div class="bg-gray-500 float-right">Float rigth</div>
+  <div class="bg-gray-500 float-left">Float left</div>
+  <div class="clearfix"></div>
+  <div class="bg-gray-500 float-right">Float rigth</div>
+  <div class="bg-gray-500 float-left">Float left</div>
+  <div class="clearfix"></div>
+  <br/>
+  <!--Overflow-> quando o conteúdo é muito grande-->
+  <div class="overflow-hidden h-16 m-6 bg-red-300">
+    <p>Testando overflos-hindden</p>
+    <p>Testando overflos-hindden</p>
+    <p>Testando overflos-hindden</p>
+    <p>Testando overflos-hindden</p>
+    <p>Testando overflos-hindden</p>
+    <p>Testando overflos-hindden</p>
+    <p>Testando overflos-hindden</p>
+  </div>
+  
+  <div class="overflow-auto h-16 m-6 bg-blue-300">
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+  </div>
+
+  <div class="overflow-x-auto h-16 m-6 bg-green-300">
+   TesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTeste
+  </div>
+  
+  <div class="overflow-y-auto overflow-x-auto h-16 m-6 bg-blue-300">
+    TesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTeste
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+    <p>Testando overflos-auto</p>
+  </div>
+
+  <!--Posições e direções-->
+  <div class="relative bg-blue-400">
+    Posições
+    <div class="absolute top-0 right-0 bg-blue-900">
+      Absolute
+    </div>
+  </div>
+
+  <!--Exerecício 3-->
+  <div class="container h-10 bg-green-600 relative m-10">
+    container
+    <div class="absolute bottom-0 right-0 bg-white text-black">
+      Div
+    </div>
+  </div>
+
+  <!--Visibilidade-->
+  <div class="container bg-purple-600 m-40 invisible">Invisible</div>
+
+  <div class="container bg-purple-600 m-40 visible">visivel</div>
+
+  <!--Z-index-> sobreposição de elementos-->
+  <div class="container relative">
+    <div class="bg-red-300 h-20 w-20 p-6 absolute z-10">Na frente</div>
+    <div class="bg-red-600 h-20 w-20 p-6 absolute m-6">Atrás</div>
+  </div>
+
+  
+  <p class="m-20">Espaço</p>
+  <p class="m-20">Espaço</p>
+  <p class="m-20">Espaço</p>
+
+  <!--Exercício 4-->
+  <div class="container relative">
+    <div class="bg-gray-700 h-32 w-32 p-32 absolute z-20">Na frente</div>
+    <div class="bg-orange-500 h-32 w-32 p-32 absolute m-5 z-10">Segundo plano</div>
+    <div class="bg-blue-500 h-32 w-32 p-32 absolute m-10">Terceiro plano</div>
+  </div>
+
+  <p class="m-20">Espaço</p>
+  <p class="m-20">Espaço</p>
+  <p class="m-20">Espaço</p>
+  <p class="m-20">Espaço</p>
+  <p class="m-20">Espaço</p>
+ 
+ 
+
+
+</body>
+</html>

@@ -1,0 +1,1315 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="font-sans antialiased" style="margin-bottom: 32px;">
+    <div id="app"
+        data-page="{&quot;component&quot;:&quot;Auth\/Login&quot;,&quot;props&quot;:{&quot;jetstream&quot;:{&quot;canCreateTeams&quot;:false,&quot;canManageTwoFactorAuthentication&quot;:true,&quot;canUpdatePassword&quot;:true,&quot;canUpdateProfileInformation&quot;:true,&quot;hasEmailVerification&quot;:false,&quot;flash&quot;:[],&quot;hasAccountDeletionFeatures&quot;:false,&quot;hasApiFeatures&quot;:false,&quot;hasTeamFeatures&quot;:false,&quot;hasTermsAndPrivacyPolicyFeature&quot;:false,&quot;managesProfilePhotos&quot;:false},&quot;user&quot;:null,&quot;errorBags&quot;:[],&quot;errors&quot;:{},&quot;appLinkDestroy&quot;:true,&quot;appOneSideMenu&quot;:[],&quot;appCurrentRoute&quot;:&quot;http:\/\/10.115.136.215\/login&quot;,&quot;appone&quot;:&quot;Andromeda&quot;,&quot;apponeTrue&quot;:false,&quot;apptwo&quot;:&quot;Sidac&quot;,&quot;apptwoTrue&quot;:false,&quot;appName&quot;:&quot;Sistema Integrado de Intelig\u00eancia&quot;,&quot;appUrl&quot;:&quot;http:\/\/10.115.136.215&quot;,&quot;flash&quot;:{&quot;message&quot;:null},&quot;userInfo&quot;:{&quot;data&quot;:&quot;22\/05\/2023 10:56&quot;,&quot;version&quot;:&quot;230522.1356&quot;,&quot;ip&quot;:&quot;10.115.136.227&quot;,&quot;hostname&quot;:&quot;fc3e3646cacd&quot;},&quot;userData&quot;:{&quot;userName&quot;:&quot;&quot;,&quot;userEmail&quot;:&quot;&quot;,&quot;0&quot;:{&quot;name&quot;:&quot;Meus Dados&quot;,&quot;href&quot;:&quot;http:\/\/10.115.136.215\/user\/profile&quot;,&quot;method&quot;:&quot;get&quot;},&quot;1&quot;:{&quot;name&quot;:&quot;Logout&quot;,&quot;href&quot;:&quot;http:\/\/10.115.136.215\/logout&quot;,&quot;method&quot;:&quot;post&quot;}},&quot;userAdmin&quot;:false,&quot;userNavigation&quot;:[{&quot;name&quot;:&quot;Meus Dados&quot;,&quot;href&quot;:&quot;http:\/\/10.115.136.215\/user\/profile&quot;,&quot;method&quot;:&quot;get&quot;},{&quot;name&quot;:&quot;Logout&quot;,&quot;href&quot;:&quot;http:\/\/10.115.136.215\/logout&quot;,&quot;method&quot;:&quot;post&quot;}],&quot;canResetPassword&quot;:true,&quot;status&quot;:null},&quot;url&quot;:&quot;\/login&quot;,&quot;version&quot;:&quot;b6b31c2e632a711ff39485a7c2228dbc&quot;}"
+        data-v-app="">
+        <div>
+            <!---->
+            <!---->
+            <!-- Static sidebar for desktop -->
+            <div class="hidden md:fixed md:inset-y-0 md:flex md:w-64 md:flex-col">
+                <!-- Sidebar component, swap this element with another sidebar if you like -->
+                <div class="flex min-h-0 flex-1 flex-col bg-gray-800">
+                    <div class="flex h-16 flex-shrink-0 items-center bg-gray-900 px-4"><img
+                            class="mr-3 h-8 w-auto hover:-translate-y-1 hover:scale-110 duration-300 focus:outline-none"
+                            src="http://10.115.136.215/images/coruja.png" alt="Andromeda" title="http://10.115.136.215/appone/operations">
+                        <p
+                            class="rounded-md mt-2 text-2xl text-justify font-extrabold text-gray-400 hover:-translate-y-1 hover:scale-110 hover:text-gray-300 duration-300 focus:outline-none">
+                            Andromeda</p>
+                    </div>
+                    <div class="mt-5 flex flex-grow flex-col">
+                        <nav class="flex-1 space-y-1 px-2" aria-label="Sidebar"><a
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                                href="http://10.115.136.215/appone"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                                    class="mr-3 flex-shrink-0 h-4 w-4 text-gray-300 mr-3 flex-shrink-0 h-4 w-4">
+                                    <path
+                                        d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z">
+                                    </path>
+                                    <path
+                                        d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z">
+                                    </path>
+                                </svg> Principal</a>
+                            <div data-headlessui-state="" class="space-y-1"><button
+                                    id="headlessui-disclosure-button-105" type="button" aria-expanded="false"
+                                    data-headlessui-state=""
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        aria-hidden="true"
+                                        class="mr-3 flex-shrink-0 h-4 w-4 mr-3 h-4 w-4 flex-shrink-0 text-gray-400 group-hover:text-gray-500">
+                                        <path fill-rule="evenodd"
+                                            d="M2.25 5.25a3 3 0 013-3h13.5a3 3 0 013 3V15a3 3 0 01-3 3h-3v.257c0 .597.237 1.17.659 1.591l.621.622a.75.75 0 01-.53 1.28h-9a.75.75 0 01-.53-1.28l.621-.622a2.25 2.25 0 00.659-1.59V18h-3a3 3 0 01-3-3V5.25zm1.5 0v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5z"
+                                            clip-rule="evenodd"></path>
+                                    </svg><span class="flex-1">Painel de Controle</span><svg
+                                        class="text-gray-300 ml-3 h-5 w-5 flex-shrink-0 transform transition-colors duration-150 ease-in-out group-hover:text-gray-400"
+                                        viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M6 6L14 10L6 14V6Z" fill="currentColor"></path>
+                                    </svg></button>
+                                <!---->
+                            </div>
+                            <div data-headlessui-state="" class="space-y-1"><button
+                                    id="headlessui-disclosure-button-107" type="button" aria-expanded="false"
+                                    data-headlessui-state=""
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        aria-hidden="true"
+                                        class="mr-3 flex-shrink-0 h-4 w-4 mr-3 h-4 w-4 flex-shrink-0 text-gray-400 group-hover:text-gray-500">
+                                        <path fill-rule="evenodd"
+                                            d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                            clip-rule="evenodd"></path>
+                                    </svg><span class="flex-1">Pesquisas</span><svg
+                                        class="text-gray-300 ml-3 h-5 w-5 flex-shrink-0 transform transition-colors duration-150 ease-in-out group-hover:text-gray-400"
+                                        viewBox="0 0 20 20" aria-hidden="true">
+                                        <path d="M6 6L14 10L6 14V6Z" fill="currentColor"></path>
+                                    </svg></button>
+                                <!---->
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="flex flex-shrink-0 bg-gray-700 p-2">
+                        <div class="flex items-center ml-2">
+                            <div>
+                                <p class="text-sm font-medium text-gray-500">Version: 230522.1411</p>
+                                <p class="text-sm font-medium text-gray-500">Hostname: fc3e3646cacd</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:pl-64">
+                <div class="sticky top-0 z-10 flex h-16 flex-shrink-0 bg-white shadow"><button type="button"
+                        class="border-r border-gray-200 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"><span
+                            class="sr-only">Abrir Menu</span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                            class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"></path>
+                        </svg></button>
+                    <div class="flex flex-1 justify-between px-4">
+                        <div class="flex flex-1"></div>
+                        <div class="ml-4 flex items-center md:ml-6">
+                            <!--v-if-->
+                            <!-- Configuration Menu -->
+                            <div data-headlessui-state="" class="relative ml-3">
+                                <div><button id="headlessui-menu-button-109" type="button" aria-haspopup="menu"
+                                        aria-expanded="false" data-headlessui-state=""
+                                        class="rounded-full bg-white p-1 text-gray-400 hover:-translate-y-1 hover:scale-110 hover:text-gray-500 duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                        title="Configurações Administrativas"><span class="sr-only">Configurações
+                                            Administrativas</span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            aria-hidden="true" class="h-8 w-8">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z">
+                                            </path>
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        </svg></button></div>
+                                <!---->
+                            </div><!-- Aplications Menu -->
+                            <div data-headlessui-state="" class="relative ml-3">
+                                <div><button id="headlessui-menu-button-111" type="button" aria-haspopup="menu"
+                                        aria-expanded="false" data-headlessui-state=""
+                                        class="rounded-full bg-white p-1 text-gray-400 hover:-translate-y-1 hover:scale-110 hover:text-gray-500 duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                        title="Aplicações"><span class="sr-only">Aplicações</span><svg
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-8 w-8">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25">
+                                            </path>
+                                        </svg></button></div>
+                                <!---->
+                            </div><!-- Profile dropdown -->
+                            <div data-headlessui-state="" class="relative ml-3">
+                                <div><button id="headlessui-menu-button-113" type="button" aria-haspopup="menu"
+                                        aria-expanded="false" data-headlessui-state=""
+                                        class="flex max-w-xs items-center rounded-full bg-white p-1 text-gray-400 hover:-translate-y-1 hover:scale-110 hover:text-gray-500 duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"><span
+                                            class="sr-only">Abrir Menu do Usuário</span><img
+                                            class="h-8 w-8 rounded-full" src="http://10.115.136.215/images/coruja.png"
+                                            alt="Meus Dados"></button></div>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <main class="flex-1">
+                    <div class="p-6">
+                        <div class="ml-8 mb-4 mx-auto max-w-full px-4 sm:px-6 md:px-8">
+                            <h1 class="text-2xl font-semibold text-gray-900">Resumo</h1>
+                            
+                            <div class="flex space-x-4">
+                                <div class="w-1/2">
+                                    <div class="border border-gray-500">
+                                        <div class="bg-gray-500 px-4 py-2 flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+                                                    <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd" />
+                                                  </svg>                                                  
+                                                <h2 class="text-lg font-semibold text-white ml-2">Telefone</h2>
+                                            </div>
+                                        </div>
+                                        <div class="overflow-x-auto">
+                                            <div style="height: 250px; overflow-y: scroll;">
+                                                <table class="w-full table-fixed">
+                                                    <thead class="border border-gray-500">
+                                                        <tr class="bg-gray-200 text-gray-900 text-sm font-semibold divide-x divide-gray-500" style="word-wrap: break-word;">
+                                                            <th class="py-2 px-4">Telefone</th>
+                                                            <th class="py-2 px-4">Operadora</th>
+                                                            <th class="py-2 px-4">Data Cadastro</th>
+                                                            <th class="py-2 px-4">Ação</th>
+                                                        </tr>
+                                                        <tr class="bg-white text-gray-900 divide-x divide-gray-500 border border-gray-500" style="word-wrap: break-word;">
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">+55 (18) 98825-2430
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">VIVO
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">04/10/2018
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm sm:pr-2">
+                                                                <div class="flex justify-center items-center space-x-2">
+                                                                    <div><a title="Ver"
+                                                                            class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                                                                            href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="h-5 w-5">
+                                                                                <path fill-rule="evenodd"
+                                                                                    d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                                                                    clip-rule="evenodd">
+                                                                                </path>
+                                                                            </svg></a>
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                    </div>
+                                                                    <div>
+                                                                        <!--v-if--><a title="Editar"
+                                                                            class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-yellow-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                                                                            href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191/edit"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="h-5 w-5">
+                                                                                <path
+                                                                                    d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z">
+                                                                                </path>
+                                                                                <path
+                                                                                    d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z">
+                                                                                </path>
+                                                                            </svg></a>
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                    </div>                                                                                
+                                                                </div>
+                                                            </td>                                             
+                                                        </tr>
+                                                        <tr class="bg-gray-100 text-gray-900 divide-x divide-gray-500 border border-gray-500">
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">+55 (18) 99825-3870
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">CLARO
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">26/06/2022
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm sm:pr-2">
+                                                                <div class="flex justify-center items-center space-x-2">
+                                                                    <div><a title="Ver"
+                                                                            class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                                                                            href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="h-5 w-5">
+                                                                                <path fill-rule="evenodd"
+                                                                                    d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                                                                    clip-rule="evenodd">
+                                                                                </path>
+                                                                            </svg></a>
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                    </div>
+                                                                    <div>
+                                                                        <!--v-if--><a title="Editar"
+                                                                            class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-yellow-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                                                                            href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191/edit"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="h-5 w-5">
+                                                                                <path
+                                                                                    d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z">
+                                                                                </path>
+                                                                                <path
+                                                                                    d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z">
+                                                                                </path>
+                                                                            </svg></a>
+                                                                    </div>                                                                                
+                                                                </div>
+                                                            </td>                                           
+                                                        </tr>
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>                                                                                               
+                            
+                                <div class="w-1/2">
+                                    <div class="border border-gray-500">
+                                        <div class="bg-gray-500 px-4 py-2 flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+                                                    <path d="M21 6.375c0 2.692-4.03 4.875-9 4.875S3 9.067 3 6.375 7.03 1.5 12 1.5s9 2.183 9 4.875z" />
+                                                    <path d="M12 12.75c2.685 0 5.19-.586 7.078-1.609a8.283 8.283 0 001.897-1.384c.016.121.025.244.025.368C21 12.817 16.97 15 12 15s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.285 8.285 0 001.897 1.384C6.809 12.164 9.315 12.75 12 12.75z" />
+                                                    <path d="M12 16.5c2.685 0 5.19-.586 7.078-1.609a8.282 8.282 0 001.897-1.384c.016.121.025.244.025.368 0 2.692-4.03 4.875-9 4.875s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.284 8.284 0 001.897 1.384C6.809 15.914 9.315 16.5 12 16.5z" />
+                                                    <path d="M12 20.25c2.685 0 5.19-.586 7.078-1.609a8.282 8.282 0 001.897-1.384c.016.121.025.244.025.368 0 2.692-4.03 4.875-9 4.875s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.284 8.284 0 001.897 1.384C6.809 19.664 9.315 20.25 12 20.25z" />
+                                                </svg>                                              
+                                                <h2 class="text-lg font-semibold text-white ml-2">Dados Cadastrais</h2>  
+                                            </div>                              
+                                        </div>
+                                        <div class="overflow-x-auto">
+                                            <div style="height: 250px; overflow-y: scroll;">
+                                                <table class="w-full table-fixed">
+                                                    <thead class="border border-gray-500">
+                                                        <tr class="bg-gray-200 text-gray-900 font-semibold divide-x divide-gray-500">
+                                                            <th class="py-2 px-4">Telefone</th>
+                                                            <th class="py-2 px-4">Nº Chamado</th>
+                                                            <th class="py-2 px-4">Data Solicitação</th>
+                                                            <th class="py-2 px-4">Status</th>
+                                                            <th class="py-2 px-4">Ação</th>
+                                                        </tr>
+                                                        <tr class="bg-white text-gray-900 divide-x divide-gray-500 border border-gray-500">
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">(18) 98825-2430
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">56
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">12/07/2021
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">
+                                                                <div class="w-24 h-6 bg-red-600 rounded-full flex items-center justify-center text-white mx-auto">
+                                                                  <span class="text-sm font-extrabold">ENCERRADO</span>
+                                                                </div>
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm sm:pr-2">
+                                                                <div class="flex justify-center items-center space-x-2">
+                                                                    <div><a title="Ver"
+                                                                            class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                                                                            href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="h-5 w-5">
+                                                                                <path fill-rule="evenodd"
+                                                                                    d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                                                                    clip-rule="evenodd">
+                                                                                </path>
+                                                                            </svg></a>
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                    </div>
+                                                                    <div>
+                                                                        <!--v-if--><a title="Editar"
+                                                                            class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-yellow-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                                                                            href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191/edit"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="h-5 w-5">
+                                                                                <path
+                                                                                    d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z">
+                                                                                </path>
+                                                                                <path
+                                                                                    d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z">
+                                                                                </path>
+                                                                            </svg></a>
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                    </div>                                                                                
+                                                                </div>
+                                                            </td>                                             
+                                                        </tr>
+                                                        <tr class="bg-gray-100 text-gray-900 divide-x divide-gray-500 border border-gray-500">
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">(18) 98825-2430
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">56
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">12/07/2021
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">
+                                                                <div class="w-24 h-6 bg-green-600 rounded-full flex items-center justify-center text-white mx-auto">
+                                                                  <span class="text-sm font-extrabold">ATIVO</span>
+                                                                </div>
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm sm:pr-2">
+                                                                <div class="flex justify-center items-center space-x-2">
+                                                                    <div><a title="Ver"
+                                                                            class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                                                                            href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="h-5 w-5">
+                                                                                <path fill-rule="evenodd"
+                                                                                    d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                                                                    clip-rule="evenodd">
+                                                                                </path>
+                                                                            </svg></a>
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                    </div>
+                                                                    <div>
+                                                                        <!--v-if--><a title="Editar"
+                                                                            class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-yellow-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                                                                            href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191/edit"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="h-5 w-5">
+                                                                                <path
+                                                                                    d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z">
+                                                                                </path>
+                                                                                <path
+                                                                                    d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z">
+                                                                                </path>
+                                                                            </svg></a>
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                    </div>                                                                                
+                                                                </div>
+                                                            </td>                                           
+                                                        </tr>
+                                                        <tr class="bg-white text-gray-900 divide-x divide-gray-500 border border-gray-500">
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">(18) 98825-2430
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">56
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">12/07/2021
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">
+                                                                <div class="w-24 h-6 bg-red-600 rounded-full flex items-center justify-center text-white mx-auto">
+                                                                  <span class="text-sm font-extrabold">ENCERRADO</span>
+                                                                </div>
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm sm:pr-2">
+                                                                <div class="flex justify-center items-center space-x-2">
+                                                                    <div><a title="Ver"
+                                                                            class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                                                                            href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="h-5 w-5">
+                                                                                <path fill-rule="evenodd"
+                                                                                    d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                                                                    clip-rule="evenodd">
+                                                                                </path>
+                                                                            </svg></a>
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                    </div>
+                                                                    <div>
+                                                                        <!--v-if--><a title="Editar"
+                                                                            class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-yellow-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                                                                            href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191/edit"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="h-5 w-5">
+                                                                                <path
+                                                                                    d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z">
+                                                                                </path>
+                                                                                <path
+                                                                                    d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z">
+                                                                                </path>
+                                                                            </svg></a>
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                    </div>                                                                                
+                                                                </div>
+                                                            </td>                                             
+                                                        </tr>                                                        
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex space-x-4 mt-4">
+                                <div class="w-1/2">
+                                    <div class="border border-gray-500">
+                                        <div class="bg-gray-500 px-4 py-2 flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+                                                    <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                                                    <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                                                </svg>                                                  
+                                                <h2 class="text-lg font-semibold text-white ml-2">E-Mail</h2> 
+                                            </div>                               
+                                        </div>
+                                        <div class="overflow-x-auto">
+                                            <div style="height: 250px; overflow-y: scroll;">
+                                                <table class="w-full table-fixed">
+                                                    <thead class="border border-gray-500">
+                                                        <tr class="bg-gray-200 text-gray-900 font-semibold divide-x divide-gray-500">
+                                                            <th class="py-2 px-4">Conta</th>
+                                                            <th class="py-2 px-4">Operadora</th>
+                                                            <th class="py-2 px-4">Ação</th>
+                                                        </tr>
+                                                        <tr class="bg-white text-gray-900 divide-x divide-gray-500 border border-gray-500">
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">originais123@icloud.com
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">ICLOUD
+                                                            </td>                                                    
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm sm:pr-2">
+                                                                <div class="flex justify-center items-center space-x-2">
+                                                                    <div><a title="Ver"
+                                                                            class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                                                                            href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="h-5 w-5">
+                                                                                <path fill-rule="evenodd"
+                                                                                    d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                                                                    clip-rule="evenodd">
+                                                                                </path>
+                                                                            </svg></a>
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                    </div>
+                                                                    <div>
+                                                                        <!--v-if--><a title="Editar"
+                                                                            class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-yellow-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                                                                            href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191/edit"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="h-5 w-5">
+                                                                                <path
+                                                                                    d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z">
+                                                                                </path>
+                                                                                <path
+                                                                                    d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z">
+                                                                                </path>
+                                                                            </svg></a>
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                    </div>                                                                                
+                                                                </div>
+                                                            </td>                                             
+                                                        </tr>
+                                                        <tr class="bg-gray-100 text-gray-900 divide-x divide-gray-500 border border-gray-500">
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">doideladoida@gmail.com
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">GOOGLE
+                                                            </td>                                                   
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm sm:pr-2">
+                                                                <div class="flex justify-center items-center space-x-2">
+                                                                    <div><a title="Ver"
+                                                                            class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                                                                            href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="h-5 w-5">
+                                                                                <path fill-rule="evenodd"
+                                                                                    d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                                                                    clip-rule="evenodd">
+                                                                                </path>
+                                                                            </svg></a>
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                    </div>
+                                                                    <div>
+                                                                        <!--v-if--><a title="Editar"
+                                                                            class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-yellow-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                                                                            href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191/edit"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="h-5 w-5">
+                                                                                <path
+                                                                                    d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z">
+                                                                                </path>
+                                                                                <path
+                                                                                    d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z">
+                                                                                </path>
+                                                                            </svg></a>
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                    </div>                                                                                
+                                                                </div>
+                                                            </td>                                           
+                                                        </tr>                                                                                                                
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                        </div>                                         
+                                    </div>
+                                </div>
+                            
+                                <div class="w-1/2">
+                                    <div class="border border-gray-500">
+                                        <div class="bg-gray-500 px-4 py-2 flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <img src="img/icons8-código-de-barras-50.png" alt="whatsapp" class="w-6 h-6">                                              
+                                                <h2 class="text-lg font-semibold text-white ml-2">IMEI</h2>
+                                            </div>                                
+                                        </div>
+                                        <div class="overflow-x-auto">
+                                            <div style="height: 250px; overflow-y: scroll;">
+                                                <table class="w-full table-fixed">
+                                                    <thead class="border border-gray-500">
+                                                        <tr class="bg-gray-200 text-sm text-gray-900 font-semibold divide-x divide-gray-500" style="word-wrap: break-word;">
+                                                            <th class="py-2 px-4">IMEI</th>
+                                                            <th class="py-2 px-4">SO</th>
+                                                            <th class="py-2 px-4">Vinculo Fone</th>
+                                                            <th class="py-2 px-4">Vinculo Email</th>
+                                                            <th class="py-2 px-4">Interceptação</th>
+                                                            <th class="py-2 px-4">Data Cadastro</th>
+                                                            <th class="py-2 px-4">Ação</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>                                                            
+                                                        <tr class="bg-white text-sm text-gray-900 divide-x divide-gray-500 border border-gray-500" >
+                                                            <td class="text-center p-2 text-sm">357.771.083.891.403
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">
+                                                                <div class="flex items-center">
+                                                                    <img src="img/icons8-android-os black.svg" alt="whatsapp" class="w-4 h-4 mx-auto">
+                                                                </div>
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">
+                                                                <div class="w-4 h-4 bg-black rounded-full flex items-center justify-center text-white mx-auto">
+                                                                  <span class="text-sm font-extrabold">1</span>
+                                                                </div>
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">
+                                                                <div class="w-4 h-4 bg-black rounded-full flex items-center justify-center text-white mx-auto">
+                                                                  <span class="text-sm font-extrabold">1</span>
+                                                                </div>
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">-
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm">11/05/2018
+                                                            </td>                                                   
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm sm:pr-2">
+                                                                <div class="flex justify-center items-center space-x-2">
+                                                                    <div><a title="Ver"
+                                                                            class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                                                                            href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="h-5 w-5">
+                                                                                <path fill-rule="evenodd"
+                                                                                    d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                                                                    clip-rule="evenodd">
+                                                                                </path>
+                                                                            </svg></a>
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                    </div>
+                                                                    <div>
+                                                                        <!--v-if--><a title="Editar"
+                                                                            class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-yellow-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                                                                            href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191/edit"><svg
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor"
+                                                                                aria-hidden="true"
+                                                                                class="h-5 w-5">
+                                                                                <path
+                                                                                    d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z">
+                                                                                </path>
+                                                                                <path
+                                                                                    d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z">
+                                                                                </path>
+                                                                            </svg></a>
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                        <!--v-if-->
+                                                                    </div>                                                                                
+                                                                </div>
+                                                            </td>                                           
+                                                        </tr>                                                                                                                
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>                                                                                
+                                    </div>
+                                </div>
+                            </div> 
+                            
+                            <div class="flex space-x-4 mt-4">
+                                <div class="w-1/2">
+                                    <div class="border border-gray-500">
+                                        <div class="bg-gray-500 px-4 py-2 flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <img src="img/icons8-windows-10.svg" alt="whatsapp" class="w-6 h-6">                                                                                                  
+                                                <h2 class="text-lg font-semibold text-white ml-2">BBM</h2> 
+                                            </div>                               
+                                        </div>
+                                        <table class="w-full">
+                                            <thead class="border border-gray-500">
+                                            <tr class="bg-gray-200 text-gray-900 font-semibold divide-x divide-gray-500">
+                                                <th class="py-2 px-4">PIN</th>
+                                                <th class="py-2 px-4">Data Cadastro</th>
+                                                <th class="py-2 px-4">Ação</th>                                                
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="4" class="bg-white p-28"></td> <!-- Quadro em branco -->
+                                                </tr>                                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            
+                                <div class="w-1/2">
+                                    <div class="border border-gray-500">
+                                        <div class="bg-gray-500 px-4 py-2 flex items-center justify-between">
+                                            <div class="flex items-center">                                                
+                                                <h2 class="text-lg font-extrabold text-white ml-2">f</h2>                                              
+                                                <h2 class="text-lg font-semibold text-white ml-2">Facebook</h2>
+                                            </div>                                
+                                        </div>
+                                        <table class="w-full">
+                                            <thead class="border border-gray-500">
+                                            <tr class="bg-gray-200 text-gray-900 font-semibold divide-x divide-gray-500">
+                                                <th class="py-2 px-4">Conta</th>
+                                                <th class="py-2 px-4">Data Cadastro</th>                                                
+                                                <th class="py-2 px-4">Ação</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="4" class="bg-white p-28"></td> <!-- Quadro em branco -->
+                                                </tr>                                           
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex space-x-4 mt-4">
+                                <div class="w-1/2">
+                                    <div class="border border-gray-500">
+                                        <div class="bg-gray-500 px-4 py-2 flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <img src="img/icons8-whatsapp.svg" alt="whatsapp" class="w-6 h-6">                                                                                                                                                                                                    
+                                                <h2 class="text-lg font-semibold text-white ml-2">Whatsapp</h2> 
+                                            </div>                               
+                                        </div>
+                                        <table class="w-full">
+                                            <thead class="border border-gray-500">
+                                            <tr class="bg-gray-200 text-gray-900 font-semibold divide-x divide-gray-500">
+                                                <th class="py-2 px-4">Conta</th>
+                                                <th class="py-2 px-4">Grupo</th>
+                                                <th class="py-2 px-4">Data Cadastro</th>
+                                                <th class="py-2 px-4">Data Pedido</th>
+                                                <th class="py-2 px-4">Ação</th>                                                
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="bg-white text-gray-900 divide-x divide-gray-500 border border-gray-500">
+                                                    <td class="whitespace-nowrap text-center p-3 text-sm">+55 (18) 99825-3870
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-3 text-sm">-
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-3 text-sm">
+                                                        <div class="w-28 h-6 bg-red-600 rounded-full flex items-center justify-center text-white mx-auto">
+                                                          <span class="text-sm font-extrabold">Não Solicitado</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-3 text-sm">
+                                                        <div class="w-28 h-6 bg-red-600 rounded-full flex items-center justify-center text-white mx-auto">
+                                                          <span class="text-sm font-extrabold">Não Solicitado</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-2 text-sm sm:pr-2">
+                                                        <div class="flex justify-center items-center space-x-2">
+                                                            <div><a title="Ver Membros"
+                                                                    class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-green-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600">
+                                                                    <img src="img/icons8-visível-30.png" alt="ver" class="w-5 h-5">                                                                       
+                                                                     </a>                                                            
+                                                            </div>                                                                                                                                            
+                                                        </div>
+                                                    </td>                                            
+                                                </tr>
+                                                <tr class="bg-gray-100 text-gray-900 divide-x divide-gray-500 border border-gray-500">
+                                                    <td class="whitespace-nowrap text-center p-3 text-sm">+55 (18) 99825-3870
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-3 text-sm">-
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-3 text-sm">
+                                                        <div class="w-28 h-6 bg-red-600 rounded-full flex items-center justify-center text-white mx-auto">
+                                                          <span class="text-sm font-extrabold">Não Solicitado</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-3 text-sm">
+                                                        <div class="w-28 h-6 bg-red-600 rounded-full flex items-center justify-center text-white mx-auto">
+                                                          <span class="text-sm font-extrabold">Não Solicitado</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-2 text-sm sm:pr-2">
+                                                        <div class="flex justify-center items-center space-x-2">
+                                                            <div><a title="Ver Membros"
+                                                                    class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-green-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600">
+                                                                    <img src="img/icons8-visível-30.png" alt="ver" class="w-5 h-5">                                                                       
+                                                                     </a>                                                            
+                                                            </div>                                                                                                                                            
+                                                        </div>
+                                                    </td>                                             
+                                                </tr>                                                                                           
+                                            </tbody>
+                                        </table>
+                                        <table>
+                                            <tr class="bg-white text-gray-900 font-semibold divide-x divide-gray-500">
+                                                <td colspan="4" class="bg-white p-16"></td> <!-- Quadro em branco -->
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            
+                                <div class="w-1/2">
+                                    <div class="border border-gray-500">
+                                        <div class="bg-gray-500 px-4 py-2 flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <img src="img/icons8-mac-os.svg" alt="whatsapp" class="w-6 h-6">                                                                                              
+                                                <h2 class="text-lg font-semibold text-white ml-2">Apple</h2>
+                                            </div>                                
+                                        </div>
+                                        <table class="w-full">
+                                            <thead class="border border-gray-500">
+                                            <tr class="bg-gray-200 text-gray-900 font-semibold divide-x divide-gray-500">
+                                                <th class="py-2 px-4">Conta</th>
+                                                <th class="py-2 px-4">E-Mail</th>
+                                                <th class="py-2 px-4">Data Cadastro</th>                                                
+                                                <th class="py-2 px-4">Ação</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="4" class="bg-white p-12"></td> <!-- Quadro em branco -->
+                                                </tr>                                           
+                                            </tbody>
+                                        </table>
+                                        <table>
+                                            <tr class="bg-white text-gray-900 font-semibold divide-x divide-gray-500">
+                                                <td colspan="4" class="bg-white p-16"></td> <!-- Quadro em branco -->
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex space-x-4 mt-4">
+                                <div class="w-1/2">
+                                    <div class="border border-gray-500">
+                                        <div class="bg-gray-500 px-4 py-2 flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <img src="img/icons8-android-os.svg" alt="whatsapp" class="w-6 h-6">                                                 
+                                                <h2 class="text-lg font-semibold text-white ml-2">ARD</h2> 
+                                            </div>                               
+                                        </div>
+                                        <table class="w-full">
+                                            <thead class="border border-gray-500">
+                                                <tr class="bg-gray-200 text-gray-900 font-semibold divide-x divide-gray-500">
+                                                <th class="py-2 px-4">IMEI</th>
+                                                <th class="py-2 px-4">E-Mail</th>
+                                                <th class="py-2 px-4">Data Cadastro</th>
+                                                <th class="py-2 px-4">ARD</th>
+                                                <th class="py-2 px-4">Status</th>
+                                                <th class="py-2 px-4">Ação</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="bg-white text-gray-900 divide-x divide-gray-500 border border-gray-500">
+                                                    <td class="whitespace-nowrap text-center p-2 text-sm">+55 (18) 99825-3870
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-2 text-sm">-
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-2 text-sm">-
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-2 text-sm">
+                                                        <div class="w-12 h-6 bg-green-600 rounded-full flex items-center justify-center text-white mx-auto">
+                                                          <img src="img/icons8-mac-os.svg" alt="android">
+                                                        </div>
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-2 text-sm">
+                                                        <div class="w-28 h-6 bg-green-600 rounded-full flex items-center justify-center text-white mx-auto">
+                                                          <span class="text-sm font-extrabold">Instalado</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-2 text-sm sm:pr-2">
+                                                        <div class="flex justify-center items-center space-x-2">
+                                                            <div><a title="Ver"
+                                                                    class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 24 24"
+                                                                        fill="currentColor"
+                                                                        aria-hidden="true"
+                                                                        class="h-5 w-5">
+                                                                        <path fill-rule="evenodd"
+                                                                            d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                                                            clip-rule="evenodd">
+                                                                        </path>
+                                                                    </svg></a>                                                            
+                                                            </div>                                                                                                                                            
+                                                        </div>
+                                                    </td>                                              
+                                                </tr>
+                                                <tr class="bg-gray-100 text-gray-900 divide-x divide-gray-500 border border-gray-500">
+                                                    <td class="whitespace-nowrap text-center p-2 text-sm">+55 (18) 99825-3870
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-2 text-sm">-
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-2 text-sm">-
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-2 text-sm">
+                                                        <div class="w-12 h-6 bg-yellow-600 rounded-full flex items-center justify-center text-white mx-auto">
+                                                            <img src="img/icons8-android-os.svg" alt="android">
+                                                        </div>
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-2 text-sm">
+                                                        <div class="w-28 h-6 bg-yellow-600 rounded-full flex items-center justify-center text-white mx-auto">
+                                                          <span class="text-sm font-extrabold">Pendente</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="whitespace-nowrap text-center p-2 text-sm sm:pr-2">
+                                                        <div class="flex justify-center items-center space-x-2">
+                                                            <div><a title="Ver"
+                                                                    class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 24 24"
+                                                                        fill="currentColor"
+                                                                        aria-hidden="true"
+                                                                        class="h-5 w-5">
+                                                                        <path fill-rule="evenodd"
+                                                                            d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                                                            clip-rule="evenodd">
+                                                                        </path>
+                                                                    </svg></a>                                                            
+                                                            </div>                                                                                                                                            
+                                                        </div>
+                                                    </td>                                             
+                                                </tr>                                                                                           
+                                            </tbody>
+                                        </table>
+                                        <table>
+                                            <tr class="bg-white text-gray-900 font-semibold divide-x divide-gray-500">
+                                                <td colspan="4" class="bg-white p-16"></td> <!-- Quadro em branco -->
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                                <div class="w-1/2">
+                                    <div class="border border-gray-500">
+                                        <div class="bg-gray-500 px-4 py-2 flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+                                                    <path fill-rule="evenodd" d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clip-rule="evenodd" />
+                                                    <path d="M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z" />
+                                                </svg>                                                                                                   
+                                                <h2 class="text-lg font-semibold text-white ml-2">Rastreadores Utilizados</h2> 
+                                            </div>                               
+                                        </div>
+                                        <table class="w-full">
+                                        <thead class="border border-gray-500">
+                                            <tr class="bg-gray-200 text-gray-900 font-semibold divide-x divide-gray-500">
+                                            <th class="py-2 px-4">ID Rastreador</th>
+                                            <th class="py-2 px-4">Data Ativação</th>
+                                            <th class="py-2 px-4">Data Término</th>
+                                            <th class="py-2 px-4">Posição</th>
+                                            <th class="py-2 px-4">Log Comando</th>
+                                            <th class="py-2 px-4">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="bg-white text-gray-900 divide-x divide-gray-500 border border-gray-500">
+                                                <td class="whitespace-nowrap text-center p-2 text-sm">205642622
+                                                </td>
+                                                <td class="whitespace-nowrap text-center p-2 text-sm">29/10/2018
+                                                </td>
+                                                <td class="whitespace-nowrap text-center p-2 text-sm">21/05/2019
+                                                </td>
+                                                <td class="whitespace-nowrap text-center p-2 text-sm sm:pr-2">
+                                                    <div class="flex justify-center items-center space-x-2">
+                                                        <div><a title="Ver"
+                                                                class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                                                </svg>
+                                                                  
+                                                            </a>                                                            
+                                                        </div>                                                                                                                                            
+                                                    </div>
+                                                </td>
+                                                <td class="whitespace-nowrap text-center p-2 text-sm sm:pr-2">
+                                                    <div class="flex justify-center items-center space-x-2">
+                                                        <div><a title="Ver"
+                                                                class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3" />
+                                                                  </svg>                                                                  
+                                                                </a>                                                            
+                                                        </div>                                                                                                                                            
+                                                    </div>
+                                                </td> 
+                                                <td class="whitespace-nowrap text-center p-2 text-sm">
+                                                    <div class="w-28 h-6 bg-red-600 rounded-full flex items-center justify-center text-white mx-auto">
+                                                      <span class="text-sm font-extrabold">ENCERRADO</span>
+                                                    </div>
+                                                </td>                                                                                             
+                                            </tr>
+                                            <tr class="bg-white text-gray-900 divide-x divide-gray-500 border border-gray-500">
+                                                <td class="whitespace-nowrap text-center p-2 text-sm">205642622
+                                                </td>
+                                                <td class="whitespace-nowrap text-center p-2 text-sm">29/10/2018
+                                                </td>
+                                                <td class="whitespace-nowrap text-center p-2 text-sm">21/05/2019
+                                                </td>
+                                                <td class="whitespace-nowrap text-center p-2 text-sm sm:pr-2">
+                                                    <div class="flex justify-center items-center space-x-2">
+                                                        <div><a title="Ver"
+                                                                class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                                                </svg>
+                                                                  
+                                                            </a>                                                            
+                                                        </div>                                                                                                                                            
+                                                    </div>
+                                                </td>
+                                                <td class="whitespace-nowrap text-center p-2 text-sm sm:pr-2">
+                                                    <div class="flex justify-center items-center space-x-2">
+                                                        <div><a title="Ver"
+                                                                class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3" />
+                                                                  </svg>                                                                  
+                                                                </a>                                                            
+                                                        </div>                                                                                                                                            
+                                                    </div>
+                                                </td> 
+                                                <td class="whitespace-nowrap text-center p-2 text-sm">
+                                                    <div class="w-28 h-6 bg-green-600 rounded-full flex items-center justify-center text-white mx-auto">
+                                                      <span class="text-sm font-extrabold">ATIVO</span>
+                                                    </div>
+                                                </td>                                                                                             
+                                            </tr>                                                                                           
+                                        </tbody>
+                                        </table>
+                                        <table>
+                                            <tr class="bg-white text-gray-900 font-semibold divide-x divide-gray-500">
+                                                <td colspan="4" class="bg-white p-16"></td> <!-- Quadro em branco -->
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex space-x-4 mt-4">
+                                <div class="w-1/2">
+                                    <div class="border border-gray-500">
+                                        <div class="bg-gray-500 px-4 py-2 flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+                                                    <path fill-rule="evenodd" d="M7.502 6h7.128A3.375 3.375 0 0118 9.375v9.375a3 3 0 003-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 00-.673-.05A3 3 0 0015 1.5h-1.5a3 3 0 00-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6zM13.5 3A1.5 1.5 0 0012 4.5h4.5A1.5 1.5 0 0015 3h-1.5z" clip-rule="evenodd" />
+                                                    <path fill-rule="evenodd" d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 013 20.625V9.375zM6 12a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V12zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM6 15a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V15zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM6 18a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V18zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                                                </svg>                                                                                                  
+                                                <h2 class="text-lg font-semibold text-white ml-2">Histórico Ofícios Linhas/IMEI</h2> 
+                                            </div>                               
+                                        </div>
+                                        <div class="overflow-x-auto">
+                                            <div style="height: 250px; overflow-y: scroll;">
+                                                <table class="w-full table-fixed">
+                                                    <thead class="border border-gray-500 text-xs" style="word-wrap: break-word;">
+                                                        <tr class="bg-gray-200 text-gray-900 text-sm font-semibold divide-x divide-gray-500" style="word-wrap: break-word;">
+                                                            <th class="py-2 px-4">Linha</th>
+                                                            <th class="py-2 px-4">Data Início</th>
+                                                            <th class="py-2 px-4">Data Término</th>
+                                                            <th class="py-2 px-4">Operadora</th>
+                                                            <th class="py-2 px-4">Ofício Nº</th>
+                                                        </tr>
+                                                        <tr class="bg-white text-gray-900 divide-x divide-gray-500 border border-gray-500" style="word-wrap: break-word;">
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">+55 (67) 99321-6360</td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">26/12/2019</td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">10/01/2020</td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">CLARO</td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">1275/19</td>
+                                                        </tr>
+                                                        <tr class="bg-white text-gray-900 divide-x divide-gray-500 border border-gray-500" style="word-wrap: break-word;">
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">+55 (67) 99321-6360
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">26/12/2019
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">10/01/2020
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">CLARO
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">1275/19
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bg-white text-gray-900 divide-x divide-gray-500 border border-gray-500" style="word-wrap: break-word;">
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">+55 (67) 99341-9019
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">07/11/2019
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">23/11/2019
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">CLARO
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">1031/19
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bg-white text-gray-900 divide-x divide-gray-500 border border-gray-500" style="word-wrap: break-word;">
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">+55 (18) 99643-7510
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">13/01/2020
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">28/01/2020
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">VIVO
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">44/20
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bg-white text-gray-900 divide-x divide-gray-500 border border-gray-500" style="word-wrap: break-word;">
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">+55 (18) 99643-7510
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">13/01/2020
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">28/01/2020
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">VIVO
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">44/20
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bg-white text-gray-900 divide-x divide-gray-500 border border-gray-500" style="word-wrap: break-word;">
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">+55 (18) 99643-7510
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">13/01/2020
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">28/01/2020
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">VIVO
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">44/20
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bg-white text-gray-900 divide-x divide-gray-500 border border-gray-500" style="word-wrap: break-word;">
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">+55 (18) 99643-7510
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">13/01/2020
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">28/01/2020
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">VIVO
+                                                            </td>
+                                                            <td class="whitespace-nowrap text-center p-2 text-sm" style="word-wrap: break-word;">44/20
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                        </div>                                                                                                                                                                                
+                                    </div>
+                                </div>
+                                
+                                <div class="w-1/2">
+                                    <div class="border border-gray-500">
+                                        <div class="bg-gray-500 px-4 py-2 flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+                                                    <path fill-rule="evenodd" d="M7.502 6h7.128A3.375 3.375 0 0118 9.375v9.375a3 3 0 003-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 00-.673-.05A3 3 0 0015 1.5h-1.5a3 3 0 00-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6zM13.5 3A1.5 1.5 0 0012 4.5h4.5A1.5 1.5 0 0015 3h-1.5z" clip-rule="evenodd" />
+                                                    <path fill-rule="evenodd" d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 013 20.625V9.375zM6 12a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V12zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM6 15a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V15zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM6 18a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V18zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                                                </svg>                                                                                                  
+                                                <h2 class="text-lg font-semibold text-white ml-2">Histórico Ofícios Outros</h2> 
+                                            </div>                               
+                                        </div>
+                                        <div class="overflow-x-auto">
+                                            <table class="min-w-full divide-y divide-gray-300">
+                                                <thead class="bg-gray-50">
+                                                    <tr class="divide-x divide-gray-300">
+                                                        <th scope="col" class="px-4 py-3.5 text-center text-sm font-semibold text-gray-900">
+                                                            Name</th>
+                                                        <th scope="col" class="px-4 py-3.5 text-center text-sm font-semibold text-gray-900">
+                                                            Sigla</th>
+                                                        <th scope="col" class="px-4 py-3.5 text-center text-sm font-semibold text-gray-900">
+                                                            Processo</th>
+                                                        <th scope="col" class="px-4 py-3.5 text-center text-sm font-semibold text-gray-900">
+                                                            Data Início</th>
+                                                        <th scope="col" class="px-4 py-3.5 text-center text-sm font-semibold text-gray-900">
+                                                            Data Término</th>
+                                                        <th scope="col" class="px-4 py-3.5 text-center text-sm font-semibold text-gray-900">
+                                                            Status</th>
+                                                        <th scope="col" class="py-3.5 pl-4 pr-4 text-center text-sm font-semibold text-gray-900 sm:pr-6">
+                                                            Ações</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="divide-y divide-gray-200 bg-white">
+                                                    <tr class="divide-x divide-gray-300 bg-white hover:bg-gray-200">
+                                                        <td class="whitespace-nowrap text-center p-4 text-sm" title="ID: 7e48318c-fd15-48aa-9668-60d935d41191">
+                                                            357.771.083.891.403</td>
+                                                        <td class="whitespace-nowrap text-center p-4 text-sm">
+                                                            DEV</td>
+                                                        <td class="whitespace-nowrap text-center p-4 text-sm">
+                                                        </td>
+                                                        <td class="whitespace-nowrap text-center p-4 text-sm">
+                                                            22/05/2023</td>
+                                                        <td class="whitespace-nowrap text-center p-4 text-sm">
+                                                            -</td>
+                                                        <td class="whitespace-nowrap text-center p-4 text-sm">
+                                                            <span class="inline-flex rounded-full bg-green-700 px-2 text-white text-xs font-bold leading-5">Ativo</span>
+                                                        </td>
+                                                        <td class="whitespace-nowrap text-center py-4 pl-4 pr-4 text-sm sm:pr-6">
+                                                            <div class="flex justify-center items-center space-x-2">
+                                                                <div><a title="Ver" class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5">
+                                                                            <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd">
+                                                                            </path>
+                                                                        </svg></a>
+                                                                    <!--v-if-->
+                                                                    <!--v-if-->
+                                                                    <!--v-if-->
+                                                                    <!--v-if-->
+                                                                </div>
+                                                                <div>
+                                                                    <!--v-if--><a title="Editar" class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-yellow-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500" href="http://10.115.136.215/appone/operations/7e48318c-fd15-48aa-9668-60d935d41191/edit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5">
+                                                                            <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z">
+                                                                            </path>
+                                                                            <path d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z">
+                                                                            </path>
+                                                                        </svg></a>
+                                                                    <!--v-if-->
+                                                                    <!--v-if-->
+                                                                    <!--v-if-->
+                                                                </div>
+                                                                <div>
+                                                                    <!--v-if-->
+                                                                    <!--v-if--><button title="Excluir" class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-red-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5">
+                                                                            <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z" clip-rule="evenodd">
+                                                                            </path>
+                                                                        </svg></button>
+                                                                    <!--v-if-->
+                                                                    <!--v-if-->
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="divide-x divide-gray-300 bg-gray-50 hover:bg-gray-200">
+                                                        <td class="whitespace-nowrap text-center p-4 text-sm" title="ID: a05e50de-ee8d-464d-8322-938d2402a243">
+                                                            Teste</td>
+                                                        <td class="whitespace-nowrap text-center p-4 text-sm">
+                                                            TS</td>
+                                                        <td class="whitespace-nowrap text-center p-4 text-sm">
+                                                        </td>
+                                                        <td class="whitespace-nowrap text-center p-4 text-sm">
+                                                            22/05/2023</td>
+                                                        <td class="whitespace-nowrap text-center p-4 text-sm">
+                                                            -</td>
+                                                        <td class="whitespace-nowrap text-center p-4 text-sm">
+                                                            <span class="inline-flex rounded-full bg-green-700 px-2 text-white text-xs font-bold leading-5">Ativo</span>
+                                                        </td>
+                                                        <td class="whitespace-nowrap text-center py-4 pl-4 pr-4 text-sm sm:pr-6">
+                                                            <div class="flex justify-center items-center space-x-2">
+                                                                <div><a title="Ver" class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" href="http://10.115.136.215/appone/operations/a05e50de-ee8d-464d-8322-938d2402a243"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5">
+                                                                            <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd">
+                                                                            </path>
+                                                                        </svg></a>
+                                                                    <!--v-if-->
+                                                                    <!--v-if-->
+                                                                    <!--v-if-->
+                                                                    <!--v-if-->
+                                                                </div>
+                                                                <div>
+                                                                    <!--v-if--><a title="Editar" class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-yellow-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500" href="http://10.115.136.215/appone/operations/a05e50de-ee8d-464d-8322-938d2402a243/edit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5">
+                                                                            <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z">
+                                                                            </path>
+                                                                            <path d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z">
+                                                                            </path>
+                                                                        </svg></a>
+                                                                    <!--v-if-->
+                                                                    <!--v-if-->
+                                                                    <!--v-if-->
+                                                                </div>
+                                                                <div>
+                                                                    <!--v-if-->
+                                                                    <!--v-if--><button title="Excluir" class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-red-600 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5">
+                                                                            <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z" clip-rule="evenodd">
+                                                                            </path>
+                                                                        </svg></button>
+                                                                    <!--v-if-->
+                                                                    <!--v-if-->
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>                                                                                                                                                                                
+                                    </div>
+                                </div> 
+                            </div>
+                                                           
+                        </div>
+                    </div>
+                </main>                                   
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
